@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ExpertCard } from './ExpertCard';
 import { NumberedItem } from './NumbertedItem';
+import { HorizontalLine } from './HorizontalLine';
 
 const experts = [
   { imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/11ffe1e7e3e92f9f7ae311fbf7c5d6f22575b9219b119ab81e58bbd7573a4c52?placeholderIfAbsent=true&apiKey=c164382b341b449397a4a0d906ba38f9", title: "Frontend Developer", alt: "Frontend Developer profile picture" },
@@ -53,7 +54,7 @@ export const Experts: React.FC = () => {
                 <div className="flex shrink-0 self-start w-0.5 bg-zinc-300 h-[51px]" role="presentation" />
               </div>
             </div>
-            <div className="flex">
+            {/* <div className="flex">
               <div className="flex flex-col w-full max-md:-mr-0.5">
                 <div className="flex shrink-0 self-center ml-3 w-0.5 bg-zinc-300 h-[67px]" role="presentation" />
                 <div className="flex max-md:pr-5">
@@ -62,16 +63,13 @@ export const Experts: React.FC = () => {
                 </div>
               </div>
               <div className="flex shrink-0 self-end mt-16 w-0.5 bg-zinc-300 h-[51px] max-md:mt-10" role="presentation" />
-            </div>
+            </div> */}
             <div className="flex shrink-0 self-end mt-16 w-0.5 bg-zinc-300 h-[51px] max-md:mt-10" role="presentation" />
           </div>
-          <div className="flex shrink-0 mt-0 mr-14 max-w-full h-0.5 bg-zinc-300 w-[266px] max-md:mr-2.5" role="presentation" />
+          <HorizontalLine width='266px'/>
           <div className="flex z-10 gap-7 text-xs text-black">
             {marketers.map((marketer, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="flex shrink-0 w-0.5 bg-zinc-300 h-[51px]" role="presentation" />
-                <ExpertCard {...marketer} />
-              </div>
+                <ExpertCard key={index} height='51px' {...marketer} />
             ))}
           </div>
         </div>
