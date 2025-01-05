@@ -4,6 +4,7 @@ import { Contact } from "@/pages/contact";
 import { Experts } from "@/pages/experts";
 import Home from "@/pages/home";
 import { Leader } from "@/pages/leader";
+import { Solution } from "@/pages/solution";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/solution",
-        element: <Concept />,
+        element: <Solution />,
       },
       {
         path: "/leadership",
