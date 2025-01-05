@@ -6,6 +6,6 @@ export const ImageCard: React.FC<ImageCardProps> = ({ src, alt, className }) => 
     loading="lazy"
     src={src}
     alt={alt}
-    className={`object-contain w-full rounded-xl ${className}`}
+    className={`object-contain w-full rounded-xl shadow-xl ${className}`}
   />
 );

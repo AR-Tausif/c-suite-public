@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ImageCard } from "./ImageCard";
 import { SectionHeading } from "./SectionHeading";
+import Container from "@/components/Container";
 
 export const Mission: React.FC = () => {
   const missionImages = [
@@ -11,6 +12,7 @@ export const Mission: React.FC = () => {
 
   return (
       <div className="flex flex-col pt-24 pb-10 w-full bg-stone-200 ">
+        <Container>
          <div className="flex gap-48 items-center">
          <SectionHeading primary="Our" secondary="Mission" />
         <div className="flex items-center gap-10 w-full max-md:max-w-full">
@@ -25,8 +27,8 @@ export const Mission: React.FC = () => {
           </div>
         </div>
          </div>
-        <div className="mt-16 ml-2.5 w-full max-w-[866px] max-md:mt-10 max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col">
+        <div className="mt-16 w-full max-md:mt-10 max-md:max-w-full">
+          <div className="flex justify-center items-center gap-5 max-md:flex-col">
             {missionImages.map((image, index) => (
               <div key={index} className={`flex flex-col ${index === 1 ? 'w-2/5' : 'w-[30%]'} max-md:ml-0 max-md:w-full`}>
                 <ImageCard {...image} />
@@ -34,6 +36,7 @@ export const Mission: React.FC = () => {
             ))}
           </div>
         </div>
+        </Container>
       </div>
   );
 };

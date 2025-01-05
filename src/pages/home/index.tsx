@@ -3,7 +3,7 @@ import { Vission } from "./Vission";
 
 const Home = () => {
   return (<div>
-    asfsad
+
       <Mission/>
       <Vission/>
   </div>);
