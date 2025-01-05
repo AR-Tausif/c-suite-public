@@ -1,9 +1,8 @@
 import * as React from "react";
-import { LeaderCardProps } from "./types";
 import { LeaderCard } from "./LeaderCard";
 import Container from "@/components/Container";
 
-export const Leader: React.FC<LeaderCardProps> = () => {
+export const Leader: React.FC = () => {
   const leaderData = [
     {
       name: "Foyzan Ahmed",
@@ -15,8 +14,8 @@ export const Leader: React.FC<LeaderCardProps> = () => {
     },
   ];
   return (
-      <Container>
-        <section className="py-24 w-full bg-white max-md:px-5 max-md:max-w-full">
+    <Container>
+      <section className="py-24 w-full bg-white max-md:px-5 max-md:max-w-full">
         {leaderData.map((leader) => (
           <LeaderCard
             key={leader.name}
@@ -27,7 +26,6 @@ export const Leader: React.FC<LeaderCardProps> = () => {
           />
         ))}
       </section>
-    
-      </Container>
+    </Container>
   );
 };

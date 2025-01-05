@@ -1,5 +1,6 @@
 import App from "@/App";
 import Concept from "@/pages/concept";
+import { Contact } from "@/pages/contact";
 import { Experts } from "@/pages/experts";
 import Home from "@/pages/home";
 import { Leader } from "@/pages/leader";
@@ -12,19 +13,27 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: "/concept",
-        element: <Concept/>,
+        element: <Concept />,
+      },
+      {
+        path: "/solution",
+        element: <Concept />,
       },
       {
         path: "/leadership",
-        element: <Leader/>,
+        element: <Leader />,
       },
       {
         path: "/experts",
-        element: <Experts/>,
+        element: <Experts />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

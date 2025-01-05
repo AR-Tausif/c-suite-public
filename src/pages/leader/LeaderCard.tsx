@@ -1,12 +1,14 @@
 import * as React from "react";
 import { LeaderCardProps } from "./types";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import { DrwerDetails } from "./DrawerDetails";
 
 export const LeaderCard: React.FC<LeaderCardProps> = ({
   name,
   position,
   description,
-  imageUrl
+  imageUrl,
 }) => {
   return (
     <article className="flex justify-center items-center gap-5 max-md:flex-col">
@@ -25,13 +27,19 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
           <p className="self-stretch mt-3.5 text-sm text-stone-400 max-md:max-w-full">
             {description}
           </p>
-          <Button
-          variant="outline"
-           className="mt-3 hover:bg-blue-600 hover:text-zinc-100"
-            aria-label={`View more details about ${name}`}
-          >
-            View details
-          </Button>
+
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button
+                variant="outline"
+                className="mt-3 hover:bg-blue-600 hover:text-zinc-100"
+                aria-label={`View more details about ${name}`}
+              >
+                View details
+              </Button>
+            </DialogTrigger>
+            <DrwerDetails/>
+          </Dialog>
         </div>
       </div>
     </article>
