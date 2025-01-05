@@ -26,10 +26,11 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
             {description}
           </p>
           <Button
-            className="px-8 py-1.5 mt-4 max-w-full text-white whitespace-nowrap bg-blue-800 rounded w-[104px] max-md:px-5"
+          variant="outline"
+           className="mt-3 hover:bg-blue-600 hover:text-zinc-100"
             aria-label={`View more details about ${name}`}
           >
-            View
+            View details
           </Button>
         </div>
       </div>
