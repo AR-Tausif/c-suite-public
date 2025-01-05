@@ -1,5 +1,11 @@
 import React from "react";
 
+interface IContactTextAreaProps {
+  row: string|undefined;
+  placeholder: string;
+  name: string;
+  defaultValue: string;
+}
 export const Contact = () => {
   return (
     <>
@@ -962,12 +968,17 @@ export const Contact = () => {
 
 export default Contact;
 
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
+const ContactTextArea = ({
+  row,
+  placeholder,
+  name,
+  defaultValue,
+}: IContactTextAreaProps) => {
   return (
     <>
       <div className="mb-6">
         <textarea
-          rows={row}
+          rows={Number(row)}
           placeholder={placeholder}
           name={name}
           className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
@@ -978,7 +989,13 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
   );
 };
 
-const ContactInputBox = ({ type, placeholder, name }) => {
+interface IContactInputBox{
+    type:string,
+    placeholder: string,
+    name: string
+}
+
+const ContactInputBox = ({ type, placeholder, name }:IContactInputBox) => {
   return (
     <>
       <div className="mb-6">
@@ -993,16 +1010,15 @@ const ContactInputBox = ({ type, placeholder, name }) => {
   );
 };
 
-
-        //   <div className="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto">
-        //     <iframe
-        //       width="100%"
-        //       height="100%"
-        //       frameBorder="0"
-        //       title="map"
-        //       marginHeight="0"
-        //       marginWidth="0"
-        //       scrolling="no"
-        //       src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-        //     ></iframe>
-        //   </div>
+//   <div className="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto">
+//     <iframe
+//       width="100%"
+//       height="100%"
+//       frameBorder="0"
+//       title="map"
+//       marginHeight="0"
+//       marginWidth="0"
+//       scrolling="no"
+//       src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+//     ></iframe>
+//   </div>

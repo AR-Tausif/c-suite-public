@@ -1,10 +1,9 @@
 import { Minus } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import Container from "./Container";
 import { appData } from "@/data/app";
 import { Link } from "react-router-dom";
 
-// react icons
 
 const Navbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
