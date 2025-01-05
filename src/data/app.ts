@@ -19,7 +19,7 @@ export const appData = {
         },
         {
             title: "Experts",
-            link: "/expert"
+            link: "/experts"
         },
         {
             title: "Contact",
