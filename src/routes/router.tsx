@@ -1,4 +1,5 @@
 import App from "@/App";
+import Concept from "@/pages/concept";
 import Home from "@/pages/home";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -12,8 +13,8 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "about",
-        element: <h1>About</h1>,
+        path: "/concept",
+        element: <Concept/>,
       },
     ],
   },
