@@ -45,7 +45,7 @@ export const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      99 S.t Sunamganj. Sylhet, Bangladesh
                     </p>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      (+62)81 414 257 9980
+                      (+880)1315-070289
                     </p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ export const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      info@c-suite.com
                     </p>
                   </div>
                 </div>
@@ -139,6 +139,11 @@ export const Contact = () => {
                     placeholder="Your Message"
                     name="details"
                     defaultValue=""
+                  />
+                  <ContactInputBox
+                    type="text"
+                    name="resume_link"
+                    placeholder="Paste your resume or portfolio link"
                   />
                   <div>
                     <button
