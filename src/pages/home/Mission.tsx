@@ -13,7 +13,7 @@ export const Mission: React.FC = () => {
   return (
       <div className="flex flex-col pt-24 pb-10 w-full bg-stone-200 ">
         <Container>
-         <div className="flex gap-48 items-center">
+         <div className="flex flex-col sm:flex-row gap-10 sm:gap-20 items-center">
          <SectionHeading primary="Our" secondary="Mission" />
         <div className="flex items-center gap-10 w-full max-md:max-w-full">
             <div className="flex shrink-0 my-auto w-1 rounded-xl bg-stone-300 h-[34px]" />

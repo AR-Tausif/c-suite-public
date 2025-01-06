@@ -9,7 +9,7 @@ import {
 
 export function HeroSlider() {
   return (
-    <Carousel className="w-screen max-h-screen overflow-hidden">
+    <Carousel className="w-[100%] max-h-screen overflow-hidden">
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index} className="w-full h-full">
