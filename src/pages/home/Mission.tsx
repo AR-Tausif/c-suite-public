@@ -19,10 +19,12 @@ export const Mission: React.FC = () => {
             <div className="flex shrink-0 my-auto w-1 rounded-xl bg-stone-300 h-[34px]" />
           <div className="flex flex-wrap flex-auto gap-3 text-sm text-zinc-600">
             <div className="flex-auto max-md:max-w-full">
+              <p className="description-text">
               Reciving inputs & then reploying clients with updates continuously
               are the strong process that each & every team members perceive as
               a top priority task. Symbolsense never hesitates to deal with tons
               of email for varification
+              </p>
             </div>
           </div>
         </div>

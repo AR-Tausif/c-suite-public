@@ -23,8 +23,8 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({
       <div className="flex flex-col ml-5 w-[50%] max-md:ml-0 max-md:w-full">
         <div className="flex flex-col items-start self-stretch my-auto text-base font-medium max-md:mt-10 max-md:max-w-full">
           <h2 className="text-xl font-semibold text-black">{name}</h2>
-          <p className="text-zinc-800">{position}</p>
-          <p className="self-stretch mt-3.5 text-sm text-stone-400 max-md:max-w-full">
+          <p className="description-text">{position}</p>
+          <p className="self-stretch mt-3.5 text-sm description-text max-md:max-w-full">
             {description}
           </p>
 

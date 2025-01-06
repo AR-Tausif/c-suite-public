@@ -11,14 +11,18 @@ export const Vission = ()=>{
             <div className="flex flex-col mt-4 w-full text-sm max-md:mt-10 max-md:max-w-full">
               <SectionHeading primary="Our" secondary="Vission" />
               <div className="mt-8 text-zinc-600 max-md:max-w-full">
+                <p className="description-text">
                 Being a hassie free logo design service provider is our
                 consistent goal always. Every client is an opportunity for us to
                 create another milestone beyond the previous milestone achieved
                 by us.
+                </p>
               </div>
               <div className="mt-8 mr-8 text-zinc-600 max-md:mr-2.5">
+                <p className="description-text">
                 So Symbolsense and the team are well concerned each moment to be
                 reason of satisfied clients smile
+                </p>
               </div>
             </div>
           </div>

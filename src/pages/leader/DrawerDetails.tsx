@@ -13,7 +13,7 @@ export function DrwerDetails() {
     <DialogContent className="max-w-md sm:max-w-4xl">
       <DialogHeader>
         <DialogTitle className="text-xl font-bold">Foyzan Ahmed</DialogTitle>
-        <DialogDescription>
+        <DialogDescription className="description-text">
           As there are not only positive changes and recovery but also
           widespread uncertainties, fears, and lack of confidence, we must be
           reviving the daily employment dynamism along with recovering our
