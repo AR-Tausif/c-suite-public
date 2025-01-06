@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-14">
+    <footer className="w-full py-14 border-t shadow-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <a href="https://pagedone.io/" className="flex justify-center ">
+          <a href="/" className="flex justify-center ">
             <svg
               className="w-40 h-8"
               viewBox="0 0 164 33"
@@ -83,7 +83,7 @@ const Footer = () => {
           </a>
           <ul className="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
             {appData.navlinks.map((item) => (
-              <li className="text-gray-800 hover:text-gray-900">
+              <li className="before:w-0 hover:before:w-full text-base before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
                 <Link to={item.link}>
                   {
                     item.title
@@ -91,26 +91,6 @@ const Footer = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <a href="#" className=" text-gray-800 hover:text-gray-900">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#" className=" text-gray-800 hover:text-gray-900">
-                Resources
-              </a>
-            </li>
-            <li>
-              <a href="#" className=" text-gray-800 hover:text-gray-900">
-                Blogs
-              </a>
-            </li>
-            <li>
-              <a href="#" className=" text-gray-800 hover:text-gray-900">
-                Support
-              </a>
-            </li>
           </ul>
           <div className="flex space-x-10 justify-center items-center mb-14">
             <a
@@ -181,7 +161,7 @@ const Footer = () => {
             </a>
           </div>
           <span className="text-lg text-gray-500 text-center block">
-            ©<a href="https://pagedone.io/">pagedone</a> 2024, All rights
+            ©<a href="/">c-suite</a> 2024, All rights
             reserved.
           </span>
         </div>
