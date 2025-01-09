@@ -37,9 +37,9 @@ export const Mission = () => {
                 </p> */}
                 <ul className="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
                   {listArr.map((item) => (
-                    <li key={item} className="flex items-center description-text">
+                    <li key={item} className="flex gap-4 description-text">
                       <svg
-                        className="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                        className="w-3.5 h-3.5 mt-2 text-green-500 dark:text-green-400 flex-shrink-0"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
