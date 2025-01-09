@@ -4,7 +4,6 @@ import Container from "./Container";
 import { appData } from "@/data/app";
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
@@ -18,7 +17,7 @@ const Navbar = () => {
           className="w-[55px]"
         /> */}
 
-          <h1 className="text-4xl py-2 text-white font-bold">C-SUITE</h1>
+          <h1 className="text-4xl py-1.9 text-white font-bold">C-SUITE</h1>
 
           <ul className="items-center gap-[20px] text-[1rem] text-[#424242] lg:flex hidden">
             {appData.navlinks.map((item) => (
@@ -45,18 +44,13 @@ const Navbar = () => {
             } lg:hidden bg-white boxShadow p-4 text-center absolute top-[65px] right-0 w-full rounded-md transition-all duration-300`}
           >
             <ul className="items-center gap-[20px] text-[1rem] text-gray-600 flex flex-col">
-              <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">
-                home
-              </li>
-              <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-poin ter capitalize">
-                Features
-              </li>
-              <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">
-                Blogs
-              </li>
-              <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">
-                Shop
-              </li>
+              {appData.navlinks.map((item, index) => (
+                <Link to={item.link} key={index}>
+                  <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">
+                    {item.title}
+                  </li>
+                </Link>
+              ))}
             </ul>
           </aside>
         </div>

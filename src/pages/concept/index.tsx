@@ -1,6 +1,4 @@
 import Container from "@/components/Container";
-import { Accordion } from "@/components/ui/accordion";
-import Item from "./accordionItem";
 import { ConceptCard } from "./conceptCard";
 
 const Concept = () => {
