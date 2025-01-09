@@ -18,7 +18,7 @@ const Navbar = () => {
           className="w-[55px]"
         /> */}
 
-          <h1 className="text-4xl py-1.9 text-white font-bold">C-SUITE</h1>
+          <h1 className="text-4xl py-2 text-white font-bold">C-SUITE</h1>
 
           <ul className="items-center gap-[20px] text-[1rem] text-[#424242] lg:flex hidden">
             {appData.navlinks.map((item) => (
