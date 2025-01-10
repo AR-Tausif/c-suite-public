@@ -8,7 +8,7 @@ const Navbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
-    <nav className=" bg-blue-900">
+    <nav className="shadow-2xl bg-gray-50 border border-slate-200">
       <Container>
         <div className="flex items-center justify-between w-full relative py-[8px]">
           {/* <img
@@ -17,12 +17,12 @@ const Navbar = () => {
           className="w-[55px]"
         /> */}
 
-          <h1 className="text-4xl py-1.9 text-white font-bold">C-SUITE</h1>
+          <h1 className="text-3xl py-2 text-red-700 font-semibold">C-SUITE</h1>
 
           <ul className="items-center gap-[20px] text-[1rem] text-[#424242] lg:flex hidden">
             {appData.navlinks.map((item) => (
               <Link key={item.title} to={item.link}>
-                <li className="before:w-0 hover:before:w-full text-white before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
+                <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
                   {item.title}
                 </li>
               </Link>
