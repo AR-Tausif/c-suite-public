@@ -61,20 +61,21 @@ const Concept = () => {
   ];
   return (
     <> 
-      <div className="py-10 bg-gray-800 text-gray-300 text-center">
-        <h4 className="text-4xl font-bold">Concept</h4>
+      <div className="concept-title py-10 bg-gray-200 text-gray-300 text-center">
+        <h4 className="text-4xl text-black font-bold">Concept</h4>
+        <p className="mt-5 max-w-xl mx-auto text-gray-600">Modern and minimalist templates for building your next product. Built with React, NextJS, TailwindCSS, Framer Motion and Typescript</p>
       </div>
     <Container className="mb-10">
-      {/* <Accordion type="single" collapsible className="w-full space-y-2">
-        {conceptData.map((item, index) => <Item content={item.content} title={item.title} index={index} />)}
-      </Accordion> */}
-      <section className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
-        {/*   ✅ Product card 1 - Starts Here 👇 */}
+      <section className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 justify-items-center justify-center gap-y-10 gap-x-10 mt-10 mb-5">
+        {/*   Product card 1 - Starts Here 👇 */}
         {conceptData.map((item, index) => (
           <ConceptCard key={index} conceptData={item} />
         ))}
       </section>
     </Container>
+    
+    
+    
     </>
   );
 };
