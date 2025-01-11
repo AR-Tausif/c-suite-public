@@ -53,18 +53,7 @@ const marketers = [
     title: "Senior Digital Marketer",
     alt: "Senior Digital Marketer profile picture",
   },
-  {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/8abf9f2eeda1475a03bb48a32d91038111e7408e4ede28ad97afed7761cdc486?placeholderIfAbsent=true&apiKey=c164382b341b449397a4a0d906ba38f9",
-    title: "Senior Digital Marketer",
-    alt: "Senior Digital Marketer profile picture",
-  },
-  {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/8abf9f2eeda1475a03bb48a32d91038111e7408e4ede28ad97afed7761cdc486?placeholderIfAbsent=true&apiKey=c164382b341b449397a4a0d906ba38f9",
-    title: "Senior Digital Marketer",
-    alt: "Senior Digital Marketer profile picture",
-  },
+  
 ];
 
 export const Experts: React.FC = () => {
@@ -73,7 +62,10 @@ export const Experts: React.FC = () => {
       className="flex flex-col rounded-none py-12"
       aria-labelledby="experts-title"
     >
-      <div className="flex justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 justify-center items-center ">
+        <ExpertCard marketers={marketers} />
+        <ExpertCard marketers={marketers} />
+        <ExpertCard marketers={marketers} />
         <ExpertCard marketers={marketers} />
       </div>
     </section>
