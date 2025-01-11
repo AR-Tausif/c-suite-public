@@ -1,9 +1,5 @@
 import * as React from "react";
 import { ExpertCard } from "./ExpertCard";
-import { NumberedItem } from "./NumbertedItem";
-import { HorizontalLine } from "./HorizontalLine";
-import { VerticalLine } from "./VerticalLine";
-import { Button } from "@/components/ui/button";
 
 const experts = [
   {
