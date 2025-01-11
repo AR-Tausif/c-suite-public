@@ -73,63 +73,6 @@ export const Experts: React.FC = () => {
       className="flex flex-col rounded-none py-12"
       aria-labelledby="experts-title"
     >
-      {/* <div className="flex flex-col pt-12 pb-24 w-full bg-white max-md:pb-24 max-md:max-w-full"> */}
-      {/* <div className="flex z-10 flex-col self-center ml-7 w-full whitespace-nowrap max-w-[746px] max-md:max-w-full">
-          <div className="flex z-10 flex-col items-center max-w-full w-[625px]">
-            <h1
-              id="experts-title"
-              className="px-11 py-2 ml-5 max-w-full text-xl font-semibold text-white bg-black rounded w-[159px] max-md:px-5"
-            >
-              Experts
-            </h1>
-            <div
-              className="flex shrink-0 mt-2 ml-6 w-0.5 bg-zinc-300 h-[47px]"
-              role="presentation"
-            />
-            <div className="flex gap-1.5 self-stretch mt-2.5 text-black">
-              <div>
-              <NumberedItem
-                number="1."
-                text="Developers"
-                showLine
-                lineWidth="w-[185px]"
-              />
-                <HorizontalLine width="266px" />
-              </div>
-              <NumberedItem
-                number="2."
-                text="Designers"
-                showLine
-                lineWidth="w-[185px]"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col self-end -mt-8 max-w-full text-black w-[114px]">
-            <NumberedItem number="3." text="Marketers" />
-            <div
-              className="flex shrink-0 mt-1.5 ml-4 w-0.5 bg-zinc-300 h-[67px] max-md:ml-2.5"
-              role="presentation"
-            />
-          </div>
-        </div> */}
-
-      {/* <div className="flex z-10 flex-col items-end pr-8 pl-16 mt-0 w-full max-md:px-5 max-md:max-w-full">
-          <HorizontalLine width="266px" />
-          <div className="flex z-10 gap-7 text-xs text-black">
-            {marketers.map((marketer, index) => (
-              <ExpertCard key={index} height="51px" {...marketer} />
-            ))}
-          </div>
-        </div> */}
-
-      {/* <div className="flex flex-wrap gap-10 mt-0 mb-0 ml-6 w-full text-xs text-black max-w-[705px] max-md:mb-2.5 max-md:max-w-full">
-          <div className="flex flex-auto gap-6">
-            {experts.map((expert, index) => (
-              <ExpertCard key={index} {...expert} />
-            ))}
-          </div>
-        </div> */}
-      {/* </div> */}
       <div className="flex justify-center">
         <ExpertCard marketers={marketers} />
       </div>
