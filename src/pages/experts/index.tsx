@@ -59,8 +59,6 @@ const marketers = [
     title: "Senior Digital Marketer",
     alt: "Senior Digital Marketer profile picture",
   },
-  
-  
 ];
 
 export const Experts: React.FC = () => {

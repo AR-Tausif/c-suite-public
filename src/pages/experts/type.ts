@@ -1,6 +1,6 @@
 export interface ExpertProps {
   index: number;
-  arrLength: number,
+  arrLength: number;
   imageSrc: string;
   title: string;
   alt: string;

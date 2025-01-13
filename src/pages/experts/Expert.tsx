@@ -2,6 +2,7 @@ import * as React from "react";
 import { ExpertProps } from "./type";
 import { VerticalLine } from "./VerticalLine";
 import DotDiv from "@/components/DotDiv";
+import { HorizontalLine } from "./HorizontalLine";
 
 export const Expert: React.FC<ExpertProps> = ({
   index,
@@ -12,18 +13,11 @@ export const Expert: React.FC<ExpertProps> = ({
 }) => {
   return (
     <div className="">
-      <div className="flex">
-        <div className={`${index === 0 ? "" : "bg-black"} w-[50%] h-0.5`} />
-        <div
-          className={`${
-            index === arrLength - 1 ? "" : " bg-black"
-          } w-[50%] h-0.5`}
-        />
-      </div>
+      <HorizontalLine arrLength={arrLength} index={index} />
       <div className="flex flex-col  items-center justify-center gap-1">
         <div className="flex flex-col items-center justify-center">
           <VerticalLine height="" className="h-8" />
-         <DotDiv/>
+          <DotDiv />
         </div>
         <div className="flex flex-col items-center px-2">
           <img

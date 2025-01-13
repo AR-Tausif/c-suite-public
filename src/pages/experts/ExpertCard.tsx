@@ -13,7 +13,7 @@ export const ExpertCard: React.FC<ExpertCardProps> = ({ marketers, title }) => {
       </div>
       <div className="">
         <div className="flex flex-col items-center justify-center mr-5">
-          <DotDiv/>
+          <DotDiv />
           <VerticalLine height="" className="h-9" />
         </div>
         <div className="">
