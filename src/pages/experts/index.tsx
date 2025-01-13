@@ -1,6 +1,5 @@
 import * as React from "react";
 import { ExpertCard } from "./ExpertCard";
-
 // const experts = [
 //   {
 //     imageSrc:
@@ -46,18 +45,21 @@ const marketers = [
       "https://cdn.builder.io/api/v1/image/assets/TEMP/7263e68bcd8b1bdf19558236a67062ee58b849f6fa6afb8a322a9629ddea7d62?placeholderIfAbsent=true&apiKey=c164382b341b449397a4a0d906ba38f9",
     title: "Instagram Marketer",
     alt: "Instagram Marketer profile picture",
+    name: "Instagram",
   },
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/8abf9f2eeda1475a03bb48a32d91038111e7408e4ede28ad97afed7761cdc486?placeholderIfAbsent=true&apiKey=c164382b341b449397a4a0d906ba38f9",
     title: "Senior Digital Marketer",
     alt: "Senior Digital Marketer profile picture",
+    name: "Tausif Ahmed",
   },
   {
     imageSrc:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/8abf9f2eeda1475a03bb48a32d91038111e7408e4ede28ad97afed7761cdc486?placeholderIfAbsent=true&apiKey=c164382b341b449397a4a0d906ba38f9",
     title: "Senior Digital Marketer",
     alt: "Senior Digital Marketer profile picture",
+    name: "Tausif Ahmed",
   },
 ];
 
@@ -67,7 +69,7 @@ export const Experts: React.FC = () => {
       className="flex flex-col rounded-none py-12"
       aria-labelledby="experts-title"
     >
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-y-20 justify-center items-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-20 justify-center items-center ">
         <ExpertCard title="SQL" marketers={marketers} />
         <ExpertCard title="Python" marketers={marketers} />
         <ExpertCard title="Golang" marketers={marketers} />

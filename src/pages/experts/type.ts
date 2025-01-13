@@ -4,6 +4,7 @@ export interface ExpertProps {
   imageSrc: string;
   title: string;
   alt: string;
+  name?:string;
   height?: string;
 }
 
