@@ -69,7 +69,7 @@ export const Experts: React.FC = () => {
       className="flex flex-col rounded-none py-12"
       aria-labelledby="experts-title"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-20 justify-center items-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-20">
         <ExpertCard title="SQL" marketers={marketers} />
         <ExpertCard title="Python" marketers={marketers} />
         <ExpertCard title="Golang" marketers={marketers} />
