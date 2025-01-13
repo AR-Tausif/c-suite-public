@@ -14,6 +14,7 @@ export interface IMarketer {
 }
 export interface ExpertCardProps {
   marketers: IMarketer[];
+  title: string;
 }
 
 export interface NumberedItemProps {

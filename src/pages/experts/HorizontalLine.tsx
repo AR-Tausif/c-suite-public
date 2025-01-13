@@ -7,7 +7,7 @@ interface TProps extends ComponentType {
 export const HorizontalLine = ({ width, height,  }: TProps) => {
   return (
     <div
-      className={`flex shrink-0 mt-0 mr-14 max-w-full ${height ? "h-[" + height +"]" : "h-0.5"} bg-zinc-300 w-[${width}] max-md:mr-2.5`}
+      className={`flex shrink-0 mt-0 mr-14 max-w-full ${height ? "h-[" + height +"]" : "h-0.5"} bg-gray-500 w-[${width}] max-md:mr-2.5`}
       role="presentation"
     />
   );
