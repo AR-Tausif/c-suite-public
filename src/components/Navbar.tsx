@@ -1,61 +1,44 @@
-import { Minus } from "lucide-react";
-import { useState } from "react";
-import Container from "./Container";
-import { appData } from "@/data/app";
-import { Link } from "react-router-dom";
-
 const Navbar = () => {
-  const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  // const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
-    <nav className="shadow-2xl bg-gray-50 border border-slate-200">
-      <Container>
-        <div className="flex items-center justify-between w-full relative py-[8px]">
-          {/* <img
-          src="https://i.ibb.co/0BZfPq6/darklogo.png"
-          alt="logo"
-          className="w-[55px]"
-        /> */}
-
-          <h1 className="text-3xl py-2 text-red-700 font-semibold">C-SUITE</h1>
-
-          <ul className="items-center gap-[20px] text-[1rem] text-[#424242] lg:flex hidden">
-            {appData.navlinks.map((item) => (
-              <Link key={item.title} to={item.link}>
-                <li className="before:w-0 hover:before:w-full before:bg-[#3B9DF8] before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-[#3B9DF8] transition-all duration-300 before:left-0 cursor-pointer capitalize">
-                  {item.title}
-                </li>
-              </Link>
-            ))}
-          </ul>
-
-          <div className="items-center gap-[10px] flex lg:hidden">
-            <Minus
-              className="text-[1.8rem] mr-1 text-[#424242]c cursor-pointer lg:hidden flex"
-              onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
-            />
-          </div>
-
-          <aside
-            className={` ${
-              mobileSidebarOpen
-                ? "translate-x-0 opacity-100 z-20"
-                : "translate-x-[200px] opacity-0 z-[-1]"
-            } lg:hidden bg-white boxShadow p-4 text-center absolute top-[65px] right-0 w-full rounded-md transition-all duration-300`}
-          >
-            <ul className="items-center gap-[20px] text-[1rem] text-gray-600 flex flex-col">
-              {appData.navlinks.map((item, index) => (
-                <Link to={item.link} key={index}>
-                  <li className="hover:border-b-[#3B9DF8] border-b-[2px] border-transparent transition-all duration-500 cursor-pointer capitalize">
-                    {item.title}
-                  </li>
-                </Link>
-              ))}
-            </ul>
-          </aside>
+    <nav id="nav" className="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-sm">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+            <div className="flex-shrink-0">
+                <h1 className="text-white font-bold text-xl">ServicePro</h1>
+            </div>
+            <div className="hidden md:block">
+                <div className="ml-10 flex items-baseline space-x-4">
+                    <a href="#overview" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Overview</a>
+                    <a href="#concept" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Concept</a>
+                    <a href="#solution" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Solution</a>
+                    <a href="#leadership" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Leadership</a>
+                    <a href="#experts" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Experts</a>
+                    <a href="#contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
+                </div>
+            </div>
+            <div className="md:hidden">
+                <button id="menu-btn" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                    <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path className="block" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-      </Container>
-    </nav>
+    </div>
+
+    <div id="mobile-menu" className="hidden md:hidden bg-neutral-900">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#overview" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Overview</a>
+            <a href="#concept" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Concept</a>
+            <a href="#solution" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Solution</a>
+            <a href="#leadership" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Leadership</a>
+            <a href="#experts" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Experts</a>
+            <a href="#contact" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        </div>
+    </div>
+</nav>
   );
 };
 
