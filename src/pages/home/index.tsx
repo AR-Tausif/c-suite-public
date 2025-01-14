@@ -9,13 +9,7 @@ import Solution from "@/components/Solution";
 const Home = () => {
   return (
     <div>
-      <HeaderHero/>
-      <Overview />
-      <CoreConcept />
-      <Solution />
-      <LeaderSection />
-      <ExpertTeam />
-      <Contact />
+      
     </div>
   );
 };
