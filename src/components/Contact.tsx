@@ -1,3 +1,5 @@
+import AppButton from "./AppButton";
+
 const Contact = ()=>{
     return(
         <section id="contact" className="py-20 bg-white">
@@ -37,16 +39,14 @@ const Contact = ()=>{
                             <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                             <textarea rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent" required></textarea>
                         </div>
-
-                        <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300">
-                            Send Message
-                        </button>
+                        
+                        <AppButton type="submit" className="w-full rounded-lg">Send Message</AppButton>
                     </form>
                 </div>
 
                 {/* <!-- Contact Information --> */}
                 <div className="lg:pl-12 animate__animated animate__fadeInRight">
-                    <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-8 text-white h-full">
+                    <div className="bg-gradient-to-br from-app_primary to-app_secondary rounded-xl p-8 text-white h-full">
                         <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
                         
                         <div className="space-y-6">

@@ -1,4 +1,6 @@
+import AppButton from "./AppButton";
 import Container from "./Container";
+import SectionHeading from "./SectionHeading";
 import SolutionContentBox from "./SolutionContentBox";
 import { Card, CardContent } from "./ui/card";
 import {
@@ -32,12 +34,7 @@ const Solution = () => {
   return (
     <section id="solution" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 animate__animated animate__fadeIn">
-            Our Solutions
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
-        </div>
+      <SectionHeading title="Our Solution" />
 
         {/* content upgoing here */}
         <Container>
@@ -71,24 +68,23 @@ const Solution = () => {
         </Container>
 
         <div className="mt-20 text-center">
-          <a
-            href="#contact"
-            className="inline-flex items-center px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:shadow-lg transition-all duration-300 animate__animated animate__pulse animate__infinite"
-          >
-            Get Started
-            <svg
-              className="w-5 h-5 ml-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
+          <a href="#contact">
+            <AppButton className="">
+              Get Started
+              <svg
+                className="w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </AppButton>
           </a>
         </div>
       </div>

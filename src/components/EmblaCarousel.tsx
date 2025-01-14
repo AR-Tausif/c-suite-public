@@ -2,6 +2,7 @@ import React, { useCallback } from 'react'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
+import ExpertCard from './ExpertCard'
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
@@ -29,8 +30,10 @@ const EmblaCarousel = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((index) => (
-            <div className="embla__slide border" key={index}>
-              <div className="embla__slide__number">{index + 1}</div>
+            <div className="embla__slide border transition-all duration-300" key={index}>
+              <div className="embla__slide__number">
+                <ExpertCard/>
+              </div>
             </div>
           ))}
         </div>
