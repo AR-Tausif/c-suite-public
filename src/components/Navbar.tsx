@@ -1,21 +1,21 @@
+import Logo from "./Logo";
+
 const Navbar = () => {
   // const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
-    <nav id="nav" className="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-sm">
+    <nav id="nav" className="fixed w-full z-50 bg-white backdrop-blur-sm">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-            <div className="flex-shrink-0">
-                <h1 className="text-white font-bold text-xl">ServicePro</h1>
-            </div>
+            <Logo />
             <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                    <a href="#overview" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Overview</a>
-                    <a href="#concept" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Concept</a>
-                    <a href="#solution" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Solution</a>
-                    <a href="#leadership" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Leadership</a>
-                    <a href="#experts" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Experts</a>
-                    <a href="#contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
+                    <a href="#overview" className="text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Overview</a>
+                    <a href="#concept" className="text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Concept</a>
+                    <a href="#solution" className="text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Solution</a>
+                    <a href="#leadership" className="text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Leadership</a>
+                    <a href="#experts" className="text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Experts</a>
+                    <a href="#contact" className="text-gray-800 hover:text-red-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
                 </div>
             </div>
             <div className="md:hidden">
