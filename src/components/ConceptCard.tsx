@@ -6,12 +6,13 @@ interface IProps extends ComponentType {
     title: string;
     description: string;
     points: string[];
-  };
+  },
+  isHidden: boolean,
 }
-const ConceptCard: FC<IProps> = ({ item }) => {
+const ConceptCard: FC<IProps> = ({ item, isHidden }) => {
   const { title, description, points } = item;
   return (
-    <div className="concept-content active" data-tab="1">
+    <div className={`concept-content ${isHidden ? "hidden" : "block"}`} data-tab="1">
       <h3 className="text-2xl font-bold text-white mb-4">{title}</h3>
       <p className="text-gray-300">{description}:</p>
       <ul className="mt-4 space-y-2 text-gray-300">

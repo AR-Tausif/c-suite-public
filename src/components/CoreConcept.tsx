@@ -1,262 +1,151 @@
-
-import ConceptCard from "./ConceptCard";
+import  { useState, useEffect } from "react";
 
 const CoreConcept = () => {
-  const sections = [
+  // State for active tab
+  const [activeTab, setActiveTab] = useState(1);
+  // State for counter values
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [counterValues, setCounterValues] = useState({
+    projectsCompleted: 0,
+    successRate: 0,
+    teamExperts: 0,
+    yearsExperience: 0,
+  });
+
+  // Tab content data
+  const tabContents = [
     {
+      id: 1,
       title: "Mission",
       description:
-        "To unite and engage experts, align efforts, and drive our agenda through strategic partnerships and collaboration.",
-      points: [
+        "To unite and engage experts, align efforts, and drive our agenda through strategic partnerships and collaboration:",
+      items: [
         "Partner with credible organizations and platforms",
         "Involve leaders and experts for effective decision-making",
         "Provide research-based recommendations",
         "Offer proven methodologies for strategic development",
+        "Rapid Prototyping",
+        "Continuous Integration",
       ],
     },
     {
-      title: "Vision",
+      id: 2,
+      title: "Vission",
       description:
-        "To build a leading forum for leaders and experts, empowering executives to overcome current and future challenges by connecting them to a broad business network.",
-      points: [
+        "To build a leading forum for leaders and experts, empowering executives to overcome current and future challenges by connecting them to a broad business network:",
+      items: [
         "Enhance leadership capacity for future challenges",
         "Connect executives to a vast professional network",
         "Foster cross-sector collaboration",
+        "Rapid Prototyping",
+        "Continuous Integration",
       ],
     },
     {
+      id: 3,
       title: "Values",
       description:
-        "Our core values guide our actions and decisions for collective benefit.",
-      points: [
+        "Our core values guide our actions and decisions for collective benefit:",
+      items: [
         "Nation first: Prioritizing national growth",
         "Ethics and Integrity: Upholding honesty and strong principles",
         "Community Development: Contributing to societal progress",
         "Altruism: Acting selflessly for the greater good",
         "Agility: Adapting quickly to change",
+        "Rapid Prototyping",
+        "Continuous Integration",
       ],
     },
   ];
 
+  // Counter animation logic
+  useEffect(() => {
+    const counters = [
+      { target: 250, key: "projectsCompleted" },
+      { target: 98, key: "successRate" },
+      { target: 50, key: "teamExperts" },
+      { target: 15, key: "yearsExperience" },
+    ];
+
+    counters.forEach((counter) => {
+      const increment = counter.target / 200;
+      let currentValue = 0;
+      const interval = setInterval(() => {
+        if (currentValue < counter.target) {
+          currentValue = Math.ceil(currentValue + increment);
+          setCounterValues((prev) => ({
+            ...prev,
+            [counter.key]: currentValue,
+          }));
+        } else {
+          clearInterval(interval);
+        }
+      }, 1);
+    });
+  }, []);
+
   return (
-    <section id="concept" className="py-20 bg-neutral-900">
+    <section className="py-20 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4 animate__animated animate__fadeIn">
-            Our Core Concepts
+            Our Core CoreConcept
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-app_primary to-app_secondary mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto"></div>
         </div>
 
-        <div className="">
-          {/* <!-- Left side: Interactive tabs --> */}
-          <div className="bg-neutral-800 rounded-xl p-8 animate__animated animate__fadeInLeft">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 justify-between items-center">
-              <div className="tab-buttons space-y-2">
+        <div className="bg-neutral-800 rounded-xl p-8 min-h-[26rem] flex justify-center items-center animate__animated animate__fadeInLeft">
+          <div className="flex justify-between items-center gap-10">
+            <div className="tab-buttons space-y-2">
+              {tabContents.map((tab) => (
                 <button
-                  className="concept-tab w-full text-left px-6 py-4 rounded-lg bg-gradient-to-r from-app_primary to-app_secondary text-white font-semibold transition-all active"
-                  data-tab="1"
+                  key={tab.id}
+                  className={`concept-tab w-full text-left px-6 py-4 rounded-lg ${
+                    activeTab === tab.id
+                      ? "bg-gradient-to-r from-purple-600 to-blue-600 text-white"
+                      : "bg-neutral-700 text-gray-300"
+                  } font-semibold transition-all`}
+                  onClick={() => setActiveTab(tab.id)}
                 >
-                  Innovation Framework
+                  {tab.title}
                 </button>
-                <button
-                  className="concept-tab w-full text-left px-6 py-4 rounded-lg bg-neutral-700 text-gray-300 hover:bg-neutral-600 font-semibold transition-all"
-                  data-tab="2"
-                >
-                  Digital Transformation
-                </button>
-                <button
-                  className="concept-tab w-full text-left px-6 py-4 rounded-lg bg-neutral-700 text-gray-300 hover:bg-neutral-600 font-semibold transition-all"
-                  data-tab="3"
-                >
-                  Sustainable Growth
-                </button>
-              </div>
+              ))}
+            </div>
 
-              <div className="tab-content mt-6">
-                {/* <div className="concept-content active" data-tab="1">
+            <div className="tab-content w-[60%]">
+              {tabContents.map((tab) => (
+                <div
+                  key={tab.id}
+                  className={`concept-content ${
+                    activeTab === tab.id ? "" : "hidden"
+                  }`}
+                >
                   <h3 className="text-2xl font-bold text-white mb-4">
-                    Innovation Framework
+                    {tab.title}
                   </h3>
-                  <p className="text-gray-300">
-                    Our innovative approach combines cutting-edge technology
-                    with proven methodologies to deliver exceptional results. We
-                    focus on:
-                  </p>
+                  <p className="text-gray-300">{tab.description}</p>
                   <ul className="mt-4 space-y-2 text-gray-300">
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-purple-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      Agile Development Process
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-purple-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      Rapid Prototyping
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-purple-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      Continuous Integration
-                    </li>
-                  </ul>
-                </div> */}
-
-                <ConceptCard item={sections[0]} />
-                <ConceptCard item={sections[1]} />
-                <ConceptCard item={sections[2]} />
-
-                <div className="concept-content hidden" data-tab="2">
-                  <h3 className="text-2xl font-bold text-white mb-4">
-                    Digital Transformation
-                  </h3>
-                  <p className="text-gray-300">
-                    We help organizations evolve in the digital age through:
-                  </p>
-                  <ul className="mt-4 space-y-2 text-gray-300">
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-purple-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      Cloud Integration
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-purple-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      AI Implementation
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-purple-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      Process Automation
-                    </li>
+                    {tab.items.map((item, index) => (
+                      <li key={index} className="flex items-center">
+                        <svg
+                          className="w-5 h-5 mr-2 text-purple-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
-
-                <div className="concept-content hidden" data-tab="3">
-                  <h3 className="text-2xl font-bold text-white mb-4">
-                    Sustainable Growth
-                  </h3>
-                  <p className="text-gray-300">
-                    Creating long-term value through:
-                  </p>
-                  <ul className="mt-4 space-y-2 text-gray-300">
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-purple-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      Scalable Solutions
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-purple-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      Resource Optimization
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 mr-2 text-purple-500"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      Market Adaptation
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

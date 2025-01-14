@@ -6,7 +6,7 @@ const LeaderCard = () => {
       <div className="relative">
         <img
           className="w-full"
-          src="https://th.bing.com/th/id/R.9da21b344efd0f945a4ce65ea9aaebec?rik=wa21HIx8hvWx0g&pid=ImgRaw&r=0"
+          src="https://ik.imagekit.io/sheryians/courses_gif/undefined-javaas_Large_jY0Wighav__6PygWBZQ.jpeg"
           alt="Leader images"
         />
         {/* <span className="absolute top-2 right-2 bg-gray-700 text-xs text-white px-2 py-1 rounded-md uppercase font-bold">
