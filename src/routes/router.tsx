@@ -4,7 +4,7 @@ import { Contact } from "@/pages/contact";
 import { Experts } from "@/pages/experts";
 import Home from "@/pages/home";
 import { Leader } from "@/pages/leader";
-import { Solution } from "@/pages/solution";
+
 import SajutyRitu from "@/pages/sr";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -21,10 +21,7 @@ const router = createBrowserRouter([
         path: "/concept",
         element: <Concept />,
       },
-      {
-        path: "/solution",
-        element: <Solution />,
-      },
+    
       {
         path: "/leadership",
         element: <Leader />,
