@@ -1,6 +1,10 @@
+import EmblaCarousel from "./EmblaCarousel";
 import ExpertCard from "./ExpertCard";
 
 const ExpertTeam = () => {
+  const OPTIONS = { dragFree: true, loop: true, slidesToScroll: 'auto' }
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
   return (
     <section id="experts" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,10 +18,12 @@ const ExpertTeam = () => {
           </p>
         </div>
 
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* <!-- Expert 1 --> */}
           <ExpertCard/>
 
+          
           {/* <!-- Expert 2 --> */}
           <div
             className="bg-white rounded-xl shadow-lg overflow-hidden group animate__animated animate__fadeInUp"
