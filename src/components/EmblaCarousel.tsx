@@ -1,14 +1,18 @@
-import React, { useCallback } from 'react'
+import  { FC, useCallback } from 'react'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import ExpertCard from './ExpertCard'
-
-const EmblaCarousel = (props) => {
+interface IProps {
+  slides: number[],
+  options: Record<string, unknown>
+}
+const EmblaCarousel:FC<IProps> = (props) => {
   const { slides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
 
-  const onNavButtonClick = useCallback((emblaApi) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const onNavButtonClick = useCallback((emblaApi:any) => {
     const autoplay = emblaApi?.plugins()?.autoplay
     if (!autoplay) return
 

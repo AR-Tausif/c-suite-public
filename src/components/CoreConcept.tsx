@@ -1,4 +1,43 @@
+
+import ConceptCard from "./ConceptCard";
+
 const CoreConcept = () => {
+  const sections = [
+    {
+      title: "Mission",
+      description:
+        "To unite and engage experts, align efforts, and drive our agenda through strategic partnerships and collaboration.",
+      points: [
+        "Partner with credible organizations and platforms",
+        "Involve leaders and experts for effective decision-making",
+        "Provide research-based recommendations",
+        "Offer proven methodologies for strategic development",
+      ],
+    },
+    {
+      title: "Vision",
+      description:
+        "To build a leading forum for leaders and experts, empowering executives to overcome current and future challenges by connecting them to a broad business network.",
+      points: [
+        "Enhance leadership capacity for future challenges",
+        "Connect executives to a vast professional network",
+        "Foster cross-sector collaboration",
+      ],
+    },
+    {
+      title: "Values",
+      description:
+        "Our core values guide our actions and decisions for collective benefit.",
+      points: [
+        "Nation first: Prioritizing national growth",
+        "Ethics and Integrity: Upholding honesty and strong principles",
+        "Community Development: Contributing to societal progress",
+        "Altruism: Acting selflessly for the greater good",
+        "Agility: Adapting quickly to change",
+      ],
+    },
+  ];
+
   return (
     <section id="concept" className="py-20 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,7 +74,7 @@ const CoreConcept = () => {
               </div>
 
               <div className="tab-content mt-6">
-                <div className="concept-content active" data-tab="1">
+                {/* <div className="concept-content active" data-tab="1">
                   <h3 className="text-2xl font-bold text-white mb-4">
                     Innovation Framework
                   </h3>
@@ -94,7 +133,11 @@ const CoreConcept = () => {
                       Continuous Integration
                     </li>
                   </ul>
-                </div>
+                </div> */}
+
+                <ConceptCard item={sections[0]} />
+                <ConceptCard item={sections[1]} />
+                <ConceptCard item={sections[2]} />
 
                 <div className="concept-content hidden" data-tab="2">
                   <h3 className="text-2xl font-bold text-white mb-4">
