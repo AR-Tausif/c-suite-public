@@ -5,7 +5,7 @@ const ExpertCard = () => {
         <div className="relative">
           <img
             className="w-full rounded mb-4"
-            src="https://th.bing.com/th/id/R.9da21b344efd0f945a4ce65ea9aaebec?rik=wa21HIx8hvWx0g&pid=ImgRaw&r=0"
+            src="https://img.freepik.com/free-photo/beautiful-young-man-student-businessman-jacket-holds-his-arms-crossed-isolated-light-grey-wall_231208-6135.jpg?t=st=1736880770~exp=1736884370~hmac=ee0e9af8d8ff3e0c5944e50f59ae9f3a358ea4a8b848ad5ad909c1ebf4443b0a&w=1060"
             alt="Leader images"
           />
         </div>
