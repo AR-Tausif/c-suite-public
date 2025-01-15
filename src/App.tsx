@@ -8,8 +8,8 @@ import CoreConcept from "./components/CoreConcept";
 import Solution from "./components/Solution";
 import LeaderSection from "./components/LeaderSection";
 import ExpertTeam from "./components/ExpertTeam";
-import { Contact } from "lucide-react";
 import Container from "./components/Container";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -30,7 +30,7 @@ const App = () => {
       </Container>
       <Overview />
       <CoreConcept />
-      <Solution />
+      {/* <Solution /> */}
       <LeaderSection />
       <ExpertTeam />
       <Contact />

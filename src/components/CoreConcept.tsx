@@ -95,14 +95,14 @@ const CoreConcept = () => {
         </div>
 
         <div className="bg-neutral-800 rounded-xl p-8 min-h-[32rem] flex justify-center items-center animate__animated animate__fadeInLeft">
-          <div className="grid grid-cols-2 gap-10">
-            <div className="tab-buttons space-y-2">
+          <div className="flex justify-between items-center gap-10">
+            <div className="tab-buttons w-[40%] flex flex-col space-y-2">
               {tabContents.map((tab) => (
                 <button
                   key={tab.id}
-                  className={`concept-tab w-full text-left px-6 py-4 rounded-lg ${
+                  className={`concept-tab text-left px-6 py-4 rounded-lg ${
                     activeTab === tab.id
-                      ? "bg-gradient-to-r from-purple-600 to-blue-600 text-white"
+                      ? "bg-gradient-to-r from-app_primary to-app_secondary text-white"
                       : "bg-neutral-700 text-gray-300"
                   } font-semibold transition-all`}
                   onClick={() => setActiveTab(tab.id)}
@@ -112,7 +112,7 @@ const CoreConcept = () => {
               ))}
             </div>
 
-            <div className="tab-content w-[60%]">
+            <div className="tab-content w-2/4">
               {tabContents.map((tab) => (
                 <div
                   key={tab.id}
