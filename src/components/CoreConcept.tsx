@@ -1,11 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import  { useState, useEffect } from "react";
 
 const CoreConcept = () => {
   // State for active tab
   const [activeTab, setActiveTab] = useState(1);
   // State for counter values
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [counterValues, setCounterValues] = useState({
+  const [, setCounterValues] = useState({
     projectsCompleted: 0,
     successRate: 0,
     teamExperts: 0,
