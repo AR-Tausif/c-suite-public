@@ -5,7 +5,6 @@ import "./css/embla.css";
 import HeaderHero from "./components/HeaderHero";
 import Overview from "./components/OverviewSection";
 import CoreConcept from "./components/CoreConcept";
-import Solution from "./components/Solution";
 import LeaderSection from "./components/LeaderSection";
 import ExpertTeam from "./components/ExpertTeam";
 import Container from "./components/Container";
