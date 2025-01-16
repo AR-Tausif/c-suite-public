@@ -1,18 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import  { useState, useEffect } from "react";
+
 import { Example } from "./Example";
 
 const CoreConcept = () => {
-  // State for active tab
-  const [activeTab, setActiveTab] = useState(1);
-  // State for counter values
-  const [, setCounterValues] = useState({
-    projectsCompleted: 0,
-    successRate: 0,
-    teamExperts: 0,
-    yearsExperience: 0,
-  });
-
   // Tab content data
   const tabContents = [
     {
@@ -59,7 +49,6 @@ const CoreConcept = () => {
     },
   ];
 
-  
   return (
     <section className="py-20 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,9 +60,7 @@ const CoreConcept = () => {
         </div>
 
         <div className="bg-neutral-800 rounded-xl p-8 min-h-[28rem] flex justify-center items-center animate__animated animate__fadeInLeft">
-          
           <Example tabContents={tabContents} />
-         
         </div>
       </div>
     </section>
