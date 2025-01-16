@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import  { useState, useEffect } from "react";
+import { Example } from "./Example";
 
 const CoreConcept = () => {
   // State for active tab
@@ -58,32 +59,7 @@ const CoreConcept = () => {
     },
   ];
 
-  // Counter animation logic
-  useEffect(() => {
-    const counters = [
-      { target: 250, key: "projectsCompleted" },
-      { target: 98, key: "successRate" },
-      { target: 50, key: "teamExperts" },
-      { target: 15, key: "yearsExperience" },
-    ];
-
-    counters.forEach((counter) => {
-      const increment = counter.target / 200;
-      let currentValue = 0;
-      const interval = setInterval(() => {
-        if (currentValue < counter.target) {
-          currentValue = Math.ceil(currentValue + increment);
-          setCounterValues((prev) => ({
-            ...prev,
-            [counter.key]: currentValue,
-          }));
-        } else {
-          clearInterval(interval);
-        }
-      }, 1);
-    });
-  }, []);
-
+  
   return (
     <section className="py-20 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,60 +70,10 @@ const CoreConcept = () => {
           <div className="w-24 h-1 bg-cerulean-blue-800 mx-auto"></div>
         </div>
 
-        <div className="bg-neutral-800 rounded-xl p-8 min-h-[32rem] flex justify-center items-center animate__animated animate__fadeInLeft">
-          <div className="flex justify-between items-center gap-10">
-            <div className="tab-buttons w-[40%] flex flex-col space-y-2">
-              {tabContents.map((tab) => (
-                <button
-                  key={tab.id}
-                  className={`concept-tab text-left px-6 py-4 rounded-lg ${
-                    activeTab === tab.id
-                      ? "bg-cerulean-blue-800 text-white"
-                      : "bg-neutral-700 text-gray-300"
-                  } font-semibold transition-all`}
-                  onClick={() => setActiveTab(tab.id)}
-                >
-                  {tab.title}
-                </button>
-              ))}
-            </div>
-
-            <div className="tab-content w-2/4">
-              {tabContents.map((tab) => (
-                <div
-                  key={tab.id}
-                  className={`concept-content ${
-                    activeTab === tab.id ? "" : "hidden"
-                  }`}
-                >
-                  <h3 className="text-2xl font-bold text-white mb-4">
-                    {tab.title}
-                  </h3>
-                  <p className="text-gray-300">{tab.description}</p>
-                  <ul className="mt-4 space-y-2 text-gray-300">
-                    {tab.items.map((item, index) => (
-                      <li key={index} className="flex items-center">
-                        <svg
-                          className="w-5 h-5 mr-2 text-purple-500"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="bg-neutral-800 rounded-xl p-8 min-h-[28rem] flex justify-center items-center animate__animated animate__fadeInLeft">
+          
+          <Example tabContents={tabContents} />
+         
         </div>
       </div>
     </section>
