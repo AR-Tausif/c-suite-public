@@ -10,7 +10,7 @@ const SectionHeading: FC<IProps> = ({ title, desc, className }) => {
       <h2 className="text-4xl font-bold text-gray-900 mb-4 animate__animated animate__fadeIn">
         {title}
       </h2>
-      <div className="w-24 h-1 bg-gradient-to-r from-app_primary to-app_secondary mx-auto"></div>
+      <div className="w-24 h-1 bg-cerulean-blue-800 mx-auto"></div>
       <p className="mt-6 text-xl text-gray-600">{desc}</p>
     </div>
   );

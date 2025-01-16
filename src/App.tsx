@@ -9,6 +9,7 @@ import LeaderSection from "./components/LeaderSection";
 import ExpertTeam from "./components/ExpertTeam";
 import Container from "./components/Container";
 import Contact from "./components/Contact";
+import Solution from "./components/Solution";
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
       <ResponsiveNavbar />
       <HeaderHero />
       <Container>
-        <div className="flex justify-between items-center py-10">
+        <div className="flex justify-between items-center py-10 border-b">
           <h2 className="text-4xl font-bold">WHAT IS C- SUITE?</h2>
           <p className="w-2/4 text-gray-600">
             A dynamic partner of engagement, placement, assessment, recruitment
@@ -29,7 +30,7 @@ const App = () => {
       </Container>
       <Overview />
       <CoreConcept />
-      {/* <Solution /> */}
+      <Solution />
       <LeaderSection />
       <ExpertTeam />
       <Contact />

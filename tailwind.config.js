@@ -20,14 +20,28 @@ module.exports = {
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
+        'cerulean-blue': {
+          '50': '#edf8ff',
+          '100': '#d6eeff',
+          '200': '#b7e2ff',
+          '300': '#85d2ff',
+          '400': '#4cb7ff',
+          '500': '#2395ff',
+          '600': '#0b75ff',
+          '700': '#055df0',
+          '800': '#0c50cf',
+          '900': '#104398',
+          '950': '#0f2a5c',
+      },
+      
+          ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-		app_primary: "#021B39",
+		'app_primary-blue': "#0C50CF",
 		app_secondary: "#C60000",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+        'primary-blue': {
+          DEFAULT: "hsl(var(--'primary-blue'))",
+          foreground: "hsl(var(--'primary-blue'-foreground))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

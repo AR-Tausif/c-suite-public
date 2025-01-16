@@ -29,7 +29,7 @@ const Overview = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4 animate__animated animate__fadeIn">
             Company Overview
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-app_primary to-app_secondary mx-auto"></div>
+          <div className="w-24 h-1 bg-cerulean-blue-900 mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

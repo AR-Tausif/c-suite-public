@@ -10,7 +10,7 @@ interface SolutionContentBoxProps {
 const SolutionContentBox: React.FC<SolutionContentBoxProps> = ({ item }) => {
   const { title, content, bg = "from-blue-600 to-purple-600" } = item;
   return (
-    <div className="group animate__animated animate__fadeInUp">
+    <div className="group animate__animated animate__fadeInUp transform  rounded-xl bg-white shadow-sm transition duration-300 hover:scale-105">
       <div className="relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl">
         <div className={`bg-gradient-to-br ${bg} p-8 h-full`}>
           <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-bl-full"></div>

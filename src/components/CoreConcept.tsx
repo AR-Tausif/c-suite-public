@@ -102,7 +102,7 @@ const CoreConcept = () => {
                   key={tab.id}
                   className={`concept-tab text-left px-6 py-4 rounded-lg ${
                     activeTab === tab.id
-                      ? "bg-gradient-to-r from-app_primary to-app_secondary text-white"
+                      ? "bg-cerulean-blue-800 text-white"
                       : "bg-neutral-700 text-gray-300"
                   } font-semibold transition-all`}
                   onClick={() => setActiveTab(tab.id)}

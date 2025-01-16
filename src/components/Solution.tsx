@@ -32,7 +32,7 @@ const Solution = () => {
     },
   ];
   return (
-    <section id="solution" className="py-20 bg-white">
+    <section id="solution" className="py-20 bg-neutral-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeading title="Our Solution" />
 

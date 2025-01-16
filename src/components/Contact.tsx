@@ -80,7 +80,7 @@ const Contact = () => {
 
           {/* <!-- Contact Information --> */}
           <div className="lg:pl-12 animate__animated animate__fadeInRight">
-            <div className="bg-gradient-to-br from-app_primary to-app_secondary rounded-xl p-8 text-white h-full">
+            <div className="bg-cerulean-blue-800 rounded-xl p-8 text-white h-full">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
 
               <div className="space-y-6">
