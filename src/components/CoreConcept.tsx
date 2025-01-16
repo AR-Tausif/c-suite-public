@@ -91,7 +91,7 @@ const CoreConcept = () => {
           <h2 className="text-4xl font-bold text-white mb-4 animate__animated animate__fadeIn">
             Our Core CoreConcept
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-cerulean-blue-800 mx-auto"></div>
         </div>
 
         <div className="bg-neutral-800 rounded-xl p-8 min-h-[32rem] flex justify-center items-center animate__animated animate__fadeInLeft">
