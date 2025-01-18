@@ -1,6 +1,6 @@
 const ExpertCard = () => {
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl animate__animated animate__fadeInUp">
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-2xl">
       <div className="p-6">
         <div className="relative">
           <img
@@ -13,7 +13,7 @@ const ExpertCard = () => {
           Alex Thompson
         </h3>
         <p className="text-cerulean-blue-800 text-center mb-4">Security Expert</p>
-        <p className="text-gray-600 text-center mb-6">
+        <p className="text-gray-600 text-center">
           10+ years in cybersecurity and system protection
         </p>
         {/* <div className="flex justify-center space-x-4">
