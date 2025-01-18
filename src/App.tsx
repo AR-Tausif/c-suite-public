@@ -9,12 +9,14 @@ import LeaderSection from "./sections/LeaderSection";
 import ExpertTeam from "./sections/ExpertTeam";
 import Contact from "./sections/Contact";
 import Solution from "./sections/Solution";
+import WhatIsCSuite from "./sections/WhatIsCSuite";
 
 const App = () => {
   return (
     <>
       <ResponsiveNavbar />
       <HeaderHero />
+      <WhatIsCSuite/>
       <Overview />
       <CoreConcept />
       <Solution />
