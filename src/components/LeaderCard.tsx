@@ -25,7 +25,7 @@ const LeaderCard = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="bg-red-600 text-center p-3 cursor-pointer hover:bg-red-500 transition-all">
+      <div className="bg-cerulean-blue-800 text-center p-3 cursor-pointer hover:bg-cerulean-blue-700 transition-all">
         <button className="text-gray-300 font-bold uppercase">View Details</button>
       </div>
     </div>

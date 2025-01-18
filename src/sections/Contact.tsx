@@ -68,7 +68,7 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <AppButton type="submit" className="w-full rounded-lg">
+              <AppButton type="submit" className="w-full rounded-lg bg-cerulean-blue-800">
                 Send Message
               </AppButton>
             </form>

@@ -1,5 +1,4 @@
 import Container from "@/components/Container";
-import AppButton from "../components/AppButton";
 import EmblaCarousel from "../components/EmblaCarousel";
 import SectionHeading from "../components/SectionHeading";
 
@@ -17,9 +16,9 @@ const ExpertTeam = () => {
           />
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
 
-          <div className="text-center">
+          {/* <div className="text-center">
             <a href="#contact">
-              <AppButton className="inline-flex items-center">
+              <AppButton className="inline-flex items-center bg-cerulean-blue-800">
                 Work With Our Experts
                 <svg
                   className="w-5 h-5 ml-2"
@@ -36,7 +35,7 @@ const ExpertTeam = () => {
                 </svg>
               </AppButton>
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
     </Container>

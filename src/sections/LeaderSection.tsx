@@ -21,7 +21,7 @@ const LeaderSection = () => {
             technology, business strategy, and digital innovation
           </p>
           <a href="#contact">
-            <AppButton className="inline-flex items-center bg-red-500 ">
+            <AppButton className="inline-flex items-center bg-cerulean-blue-800 ">
               Connect With Us
               <svg
                 className="w-5 h-5 ml-2"

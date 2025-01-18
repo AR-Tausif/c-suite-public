@@ -71,7 +71,7 @@ const Solution = () => {
 
         <div className="mt-20 text-center">
           <a href="#contact">
-            <AppButton className="bg-red-500">
+            <AppButton className="bg-cerulean-blue-800">
               Get Started
               <svg
                 className="w-5 h-5 ml-2"

@@ -14,7 +14,7 @@ const SectionHeading: FC<IProps> = ({
   return (
     <div className={`text-center mb-16 ${className}`}>
       <h2
-        className={`text-4xl font-bold border-b-[3px] border-b-red-600 inline pb-3 mb-4 ${
+        className={`text-4xl font-bold border-b-[3px] border-b-cerulean-blue-800 inline pb-3 mb-4 ${
           titleTxtColor ? titleTxtColor : "text-gray-900"
         }`}
       >
