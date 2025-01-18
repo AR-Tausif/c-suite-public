@@ -16,11 +16,11 @@ const ExpertCard = () => {
         <p className="text-gray-600 text-center mb-6">
           10+ years in cybersecurity and system protection
         </p>
-        <div className="flex justify-center space-x-4">
+        {/* <div className="flex justify-center space-x-4">
           <button className="px-4 py-2 text-sm text-purple-600 border border-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition-colors">
             View Profile
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
