@@ -12,7 +12,7 @@ const ExpertCard = () => {
         <h3 className="text-xl font-bold text-gray-900 text-center mb-2">
           Alex Thompson
         </h3>
-        <p className="text-purple-600 text-center mb-4">Security Expert</p>
+        <p className="text-cerulean-blue-800 text-center mb-4">Security Expert</p>
         <p className="text-gray-600 text-center mb-6">
           10+ years in cybersecurity and system protection
         </p>
