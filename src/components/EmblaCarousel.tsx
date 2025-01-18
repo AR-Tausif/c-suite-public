@@ -10,7 +10,7 @@ interface IProps {
 const EmblaCarousel:FC<IProps> = (props) => {
   const { slides, options } = props
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
+  const [emblaRef] = useEmblaCarousel(options, [Autoplay()])
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   // const onNavButtonClick = useCallback((emblaApi:any) => {

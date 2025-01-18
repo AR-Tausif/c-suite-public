@@ -145,7 +145,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Security Services
+                  Blogs
                 </a>
               </li>
             </ul>
