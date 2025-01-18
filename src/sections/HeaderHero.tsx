@@ -19,12 +19,12 @@ const HeaderHero = () => {
         </h1>
         <div className="flex justify-center items-center gap-5 mt-5 text-xl">
           <a href="#contact">
-            <Button className="py-5 bg-gray-100 px-8 text-slate-800 text-xl hover:text-gray-100">
+            <Button className="py-5 bg-gray-100 px-8 text-slate-800 text-xl hover:text-gray-900 transform transition duration-500 hover:scale-105 flex justify-center items-center">
               CONTACT
             </Button>
           </a>
           <a href="#solution">
-            <Button className="py-5 bg-gray-100 px-8 text-slate-800 text-xl hover:text-gray-100">
+            <Button className="py-5 bg-gray-100 px-8 text-slate-800 text-xl hover:text-gray-900 transform transition duration-500 hover:scale-105 flex justify-center items-center">
               SOLUTION
             </Button>
           </a>

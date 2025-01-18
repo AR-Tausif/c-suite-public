@@ -43,9 +43,11 @@ const Solution = () => {
               opts={{
                 align: "start",
               }}
-              className="w-full max-w-6xl"
+              className="w-full max-w-6xl bg-transparent"
             >
-              <CarouselContent>
+              <CarouselContent className="flex justify-center items-center p-10 bg-transparent">
+                <div className="flex justify-center gap-2">
+
                 {solutionData.map((item, index) => (
                   <CarouselItem
                     key={index}
@@ -60,6 +62,7 @@ const Solution = () => {
                     </div>
                   </CarouselItem>
                 ))}
+                </div>
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
