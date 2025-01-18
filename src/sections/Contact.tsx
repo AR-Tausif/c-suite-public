@@ -1,18 +1,14 @@
+import SectionHeading from "@/components/SectionHeading";
 import AppButton from "../components/AppButton";
 
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 animate__animated animate__fadeIn">
-            Get In Touch
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
-          <p className="mt-6 text-xl text-gray-600">
-            Let's discuss how we can help transform your business
-          </p>
-        </div>
+        
+
+        <SectionHeading title="Get In Touch" desc="Let's discuss how we can help transform your business" />
+
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-white rounded-xl shadow-xl p-8 animate__animated animate__fadeInLeft">

@@ -36,7 +36,6 @@ const Solution = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeading title="Our Solution" />
 
-        {/* content upgoing here */}
         <Container>
           <div className="flex justify-center items-center">
             <Carousel
@@ -72,7 +71,7 @@ const Solution = () => {
 
         <div className="mt-20 text-center">
           <a href="#contact">
-            <AppButton className="">
+            <AppButton className="bg-red-500">
               Get Started
               <svg
                 className="w-5 h-5 ml-2"
