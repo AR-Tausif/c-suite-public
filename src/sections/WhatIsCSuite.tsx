@@ -2,7 +2,7 @@ import Container from "@/components/Container";
 
 const WhatIsCSuite = () => {
   return (
-    <div className="border-b-2 rounded-xl border-cerulean-blue-800"> 
+    <div className="border-b-[3px] border-cerulean-blue-800"> 
     <Container>
       <div className="flex flex-col sm:flex-row justify-between items-center gap-5 sm:gap-0 py-6">
         <div className="relative inline-block text-center">
