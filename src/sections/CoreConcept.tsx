@@ -53,7 +53,7 @@ const CoreConcept = () => {
   return (
     <section className="py-20 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading title="Our Core CoreConcept" titleClassName="text-gray-100" />
+        <SectionHeading title="Our Core CoreConcept" titleTxtColor="text-gray-100" />
 
         <div className="bg-neutral-800 rounded-xl p-8 min-h-[28rem] flex flex-col sm:flex-row justify-center items-center">
           <Example tabContents={tabContents} />
