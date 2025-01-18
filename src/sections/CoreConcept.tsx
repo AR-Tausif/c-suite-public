@@ -59,7 +59,7 @@ const CoreConcept = () => {
           <div className="w-24 h-1 bg-cerulean-blue-800 mx-auto"></div>
         </div>
 
-        <div className="bg-neutral-800 rounded-xl p-8 min-h-[28rem] flex justify-center items-center animate__animated animate__fadeInLeft">
+        <div className="bg-neutral-800 rounded-xl p-8 min-h-[28rem] flex flex-col sm:flex-row justify-center items-center">
           <Example tabContents={tabContents} />
         </div>
       </div>

@@ -18,8 +18,8 @@ interface IProps {
 }
 export const Example: FC<IProps> = ({ tabContents }) => {
   return (
-    <Tabs defaultValue={tabContents[0].title.toLowerCase()} className="w-full flex flex-col sm:flex-row gap-10 items-center justify-center">
-      <TabsList className="grid w-2/4 grid-cols-1 gap-y-4 items-center justify-center h-full">
+    <Tabs defaultValue={tabContents[0].title.toLowerCase()} className="w-full flex flex-col sm:flex-row gap-10 items-start sm:items-center justify-center">
+      <TabsList className="grid w-full sm:w-2/4 grid-cols-4 sm:grid-cols-1 gap-4 sm:gap-y-4 items-center justify-center h-full">
         {tabContents.map((tab) => (
           <TabsTrigger
           key={tab.id}
@@ -33,7 +33,7 @@ export const Example: FC<IProps> = ({ tabContents }) => {
       
      
       {tabContents.map((tab) => (
-        <TabsContent key={tab.id} value={tab.title.toLowerCase()} className="w-2/4">
+        <TabsContent key={tab.id} value={tab.title.toLowerCase()} className="w-full sm:w-2/4">
           <Card className="bg-transparent text-gray-300 border-0">
             <CardHeader>
               <CardTitle>{tab.title}</CardTitle>
