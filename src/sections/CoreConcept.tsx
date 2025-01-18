@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-import { Example } from "./Example";
+import { Example } from "../components/Example";
 
 const CoreConcept = () => {
   // Tab content data

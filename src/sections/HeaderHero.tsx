@@ -1,6 +1,6 @@
 import BannerHero from "../../public/banner-hero.png";
-import Container from "./Container";
-import { Button } from "./ui/button";
+import Container from "../components/Container";
+import { Button } from "../components/ui/button";
 const HeaderHero = () => {
   return (
     <div className="relative h-screen">

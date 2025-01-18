@@ -1,4 +1,4 @@
-import AppButton from "./AppButton";
+import AppButton from "../components/AppButton";
 
 const Contact = () => {
   return (

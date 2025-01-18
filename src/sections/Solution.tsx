@@ -1,15 +1,15 @@
-import AppButton from "./AppButton";
-import Container from "./Container";
-import SectionHeading from "./SectionHeading";
-import SolutionContentBox from "./SolutionContentBox";
-import { Card, CardContent } from "./ui/card";
+import AppButton from "../components/AppButton";
+import Container from "../components/Container";
+import SectionHeading from "../components/SectionHeading";
+import SolutionContentBox from "../components/SolutionContentBox";
+import { Card, CardContent } from "../components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "./ui/carousel";
+} from "../components/ui/carousel";
 
 const Solution = () => {
   const solutionData = [

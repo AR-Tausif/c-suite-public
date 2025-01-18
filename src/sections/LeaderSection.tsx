@@ -1,5 +1,5 @@
-import AppButton from "./AppButton";
-import LeaderCard from "./LeaderCard";
+import AppButton from "../components/AppButton";
+import LeaderCard from "../components/LeaderCard";
 
 const LeaderSection = () => {
   return (

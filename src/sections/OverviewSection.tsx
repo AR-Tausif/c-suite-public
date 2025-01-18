@@ -1,5 +1,5 @@
 import { FC } from "react";
-import OverviewBox from "./OverviewBox";
+import OverviewBox from "../components/OverviewBox";
 
 const Overview = () => {
   const overviewData = [

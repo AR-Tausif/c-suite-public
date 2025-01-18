@@ -2,22 +2,19 @@ import ResponsiveNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./css/bse.css";
 import "./css/embla.css";
-import HeaderHero from "./components/HeaderHero";
-import Overview from "./components/OverviewSection";
-import CoreConcept from "./components/CoreConcept";
-import LeaderSection from "./components/LeaderSection";
-import ExpertTeam from "./components/ExpertTeam";
-import Contact from "./components/Contact";
-import Solution from "./components/Solution";
+import HeaderHero from "./sections/HeaderHero";
+import Overview from "./sections/OverviewSection";
+import CoreConcept from "./sections/CoreConcept";
+import LeaderSection from "./sections/LeaderSection";
+import ExpertTeam from "./sections/ExpertTeam";
+import Contact from "./sections/Contact";
+import Solution from "./sections/Solution";
 
 const App = () => {
   return (
     <>
       <ResponsiveNavbar />
       <HeaderHero />
-      
-      
-     
       <Overview />
       <CoreConcept />
       <Solution />

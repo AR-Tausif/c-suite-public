@@ -1,6 +1,6 @@
-import AppButton from "./AppButton";
-import EmblaCarousel from "./EmblaCarousel";
-import SectionHeading from "./SectionHeading";
+import AppButton from "../components/AppButton";
+import EmblaCarousel from "../components/EmblaCarousel";
+import SectionHeading from "../components/SectionHeading";
 
 const ExpertTeam = () => {
   const OPTIONS = { dragFree: true, loop: false, slidesToScroll: "auto" };
