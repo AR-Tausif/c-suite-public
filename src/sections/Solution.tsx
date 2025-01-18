@@ -41,12 +41,12 @@ const Solution = () => {
           <div className="flex justify-center items-center">
             <Carousel
               opts={{
-                align: "start",
+                align: "center",
               }}
               className="w-full max-w-6xl bg-transparent"
             >
-              <CarouselContent className="flex justify-center items-center p-10 bg-transparent">
-                <div className="flex justify-center gap-2">
+              <CarouselContent className="p-10 bg-transparent">
+                <div className="flex justify-center items-center gap-2">
 
                 {solutionData.map((item, index) => (
                   <CarouselItem
