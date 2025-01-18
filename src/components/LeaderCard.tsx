@@ -1,7 +1,7 @@
 
 const LeaderCard = () => {
   return (
-    <div className="max-w-sm bg-black text-white rounded-lg overflow-hidden shadow-lg">
+    <div className="max-w-sm bg-black mx-auto text-white rounded-lg overflow-hidden shadow-lg">
       {/* Image Section */}
       <div className="relative max-h-60 overflow-hidden">
         <img

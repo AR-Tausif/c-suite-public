@@ -35,7 +35,7 @@ const EmblaCarousel:FC<IProps> = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container p-10">
           {slides.map((index) => (
-            <div className="embla__slide flex-[0_0_80%] sm:flex-[0_0_25%] group transform transition-all duration-300 hover:scale-105" key={index}>
+            <div className="embla__slide flex-[0_0_80%] md:flex-[0_0_25%] group transform transition-all duration-300 hover:scale-105" key={index}>
               <div className="embla__slide__number">
                 <ExpertCard/>
               </div>
