@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
+import SectionHeading from "@/components/SectionHeading";
 import { Example } from "../components/Example";
 
 const CoreConcept = () => {
@@ -52,12 +53,7 @@ const CoreConcept = () => {
   return (
     <section className="py-20 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4 animate__animated animate__fadeIn">
-            Our Core CoreConcept
-          </h2>
-          <div className="w-24 h-1 bg-cerulean-blue-800 mx-auto"></div>
-        </div>
+        <SectionHeading title="Our Core CoreConcept" titleClassName="text-gray-100" />
 
         <div className="bg-neutral-800 rounded-xl p-8 min-h-[28rem] flex flex-col sm:flex-row justify-center items-center">
           <Example tabContents={tabContents} />
