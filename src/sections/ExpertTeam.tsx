@@ -8,11 +8,11 @@ const ExpertTeam = () => {
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   return (
     <Container>
-      <section id="experts" className="py-20 bg-white">
+      <section id="experts" className="pt-20 bg-white">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Our Expert Team"
-            desc="Meet our team of experienced professionals"
+            className="mb-0"
           />
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
 

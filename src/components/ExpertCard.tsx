@@ -9,13 +9,13 @@ const ExpertCard = () => {
             alt="Leader images"
           />
         </div>
-        <h3 className="text-xl font-bold text-gray-900 text-center mb-2">
+        <h3 className="text-xl font-bold text-gray-900 text-center mb-">
           Alex Thompson
         </h3>
-        <p className="text-cerulean-blue-800 text-center mb-4">Security Expert</p>
-        <p className="text-gray-600 text-center">
+        <p className="text-cerulean-blue-900 font-semibold text-center mb-2">Security Expert</p>
+        {/* <p className="text-gray-600 text-center">
           10+ years in cybersecurity and system protection
-        </p>
+        </p> */}
         {/* <div className="flex justify-center space-x-4">
           <button className="px-4 py-2 text-sm text-purple-600 border border-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition-colors">
             View Profile

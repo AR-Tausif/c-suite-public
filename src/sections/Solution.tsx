@@ -34,10 +34,11 @@ const Solution = () => {
   return (
     <section id="solution" className="py-20 bg-neutral-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <SectionHeading title="Our Solution" />
+      <SectionHeading title="Our Solution" className="mb-0" />
 
         <Container>
           <div className="flex justify-center items-center">
+            
             <Carousel
               opts={{
                 align: "center",
@@ -69,7 +70,7 @@ const Solution = () => {
           </div>
         </Container>
 
-        <div className="mt-20 text-center">
+        <div className="mt-1 text-center">
           <a href="#contact">
             <AppButton className="bg-cerulean-blue-800">
               Get Started
@@ -95,3 +96,13 @@ const Solution = () => {
 };
 
 export default Solution;
+
+
+// 50% on small screens and 33% on larger screens.
+<Carousel>
+  <CarouselContent>
+    <CarouselItem className="md:basis-1/2 lg:basis-1/3">...</CarouselItem>
+    <CarouselItem className="md:basis-1/2 lg:basis-1/3">...</CarouselItem>
+    <CarouselItem className="md:basis-1/2 lg:basis-1/3">...</CarouselItem>
+  </CarouselContent>
+</Carousel>

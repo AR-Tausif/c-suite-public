@@ -15,7 +15,7 @@ const LeaderSection = () => {
           <LeaderCard />
         </div>
 
-        <div className="mt-20 text-center">
+        <div className="mt-4 text-center">
           <p className="text-xl text-gray-300 mb-8 animate__animated animate__fadeIn">
             Our leadership team brings together decades of experience in
             technology, business strategy, and digital innovation

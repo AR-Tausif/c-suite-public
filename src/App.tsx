@@ -8,8 +8,10 @@ import CoreConcept from "./sections/CoreConcept";
 import LeaderSection from "./sections/LeaderSection";
 import ExpertTeam from "./sections/ExpertTeam";
 import Contact from "./sections/Contact";
-import Solution from "./sections/Solution";
 import WhatIsCSuite from "./sections/WhatIsCSuite";
+import Solution from "./sections/SolutionSection";
+import ExpertTeamSection from "./sections/ExpertTeamSection";
+// import Solution from "./sections/Solution";
 
 const App = () => {
   return (
@@ -19,9 +21,11 @@ const App = () => {
       <WhatIsCSuite/>
       <Overview />
       <CoreConcept />
-      <Solution />
+      {/* <Solution /> */}
+      <Solution/>
       <LeaderSection />
       <ExpertTeam />
+      {/* <ExpertTeamSection/> */}
       <Contact />
       <Footer />
     </>

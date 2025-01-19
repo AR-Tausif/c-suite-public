@@ -9,19 +9,21 @@ const SectionHeading: FC<IProps> = ({
   title,
   desc,
   className,
-  titleTxtColor,
+  titleTxtColor
 }) => {
+
   return (
     <div className={`text-center mb-16 ${className}`}>
       <h2
-        className={`text-4xl font-bold border-b-[3px] border-b-cerulean-blue-800 inline pb-3 mb-4 ${
+        className={`text-4xl font-bold inline ${
           titleTxtColor ? titleTxtColor : "text-gray-900"
         }`}
       >
-        {title}
+        {title} 
       </h2>
       {/* <div className="w-24 h-1 bg-red-600 mx-auto"></div> */}
-      <p className="mt-6 text-xl text-gray-600">{desc}</p>
+      <p className="mt-1 mb-2 text-xl text-gray-600">{desc}</p>
+      <div className={`max-w-md h-1 mt-3 bg-cerulean-blue-800 mx-auto`} style={{width: `${title.length*1.2}rem`}}></div>
     </div>
   );
 };

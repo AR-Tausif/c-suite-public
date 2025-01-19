@@ -10,32 +10,15 @@ interface IProps {
 const EmblaCarousel:FC<IProps> = (props) => {
   const { slides, options } = props
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [emblaRef] = useEmblaCarousel(options, [Autoplay()])
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  // const onNavButtonClick = useCallback((emblaApi:any) => {
-  //   const autoplay = emblaApi?.plugins()?.autoplay
-  //   if (!autoplay) return
-
-  //   const resetOrStop =
-  //     autoplay.options.stopOnInteraction === false
-  //       ? autoplay.reset
-  //       : autoplay.stop
-
-  //   resetOrStop()
-  // }, [])
-
-  // const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
-  //   emblaApi,
-  //   onNavButtonClick
-  // )
-
+ 
   return (
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container p-10">
           {slides.map((index) => (
-            <div className="embla__slide flex-[0_0_80%] md:flex-[0_0_25%] group transform transition-all duration-300 hover:scale-105" key={index}>
+            <div className="embla__slide flex-[0_0_100%] md:flex-[0_0_25%] group transform transition-all duration-300 hover:scale-105" key={index}>
               <div className="embla__slide__number">
                 <ExpertCard/>
               </div>
@@ -43,14 +26,14 @@ const EmblaCarousel:FC<IProps> = (props) => {
           ))}
         </div>
       </div>
-
-      {/* <div className="embla__controls">
+{/* 
+      <div className="embla__controls">
         <div className="embla__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={'embla__dot bg-black'.concat(
+              className={'embla__dot bg-gray-300 '.concat(
                 index === selectedIndex ? ' embla__dot--selected' : ''
               )}
             />
