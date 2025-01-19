@@ -1,11 +1,9 @@
 import Container from "@/components/Container";
 import EmblaCarousel from "../components/EmblaCarousel";
 import SectionHeading from "../components/SectionHeading";
+import InfiniteHorizontalScroll from "@/components/infiniteScroll";
 
 const ExpertTeam = () => {
-  const OPTIONS = { dragFree: true, loop: false, slidesToScroll: "auto" };
-  const SLIDE_COUNT = 15;
-  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   return (
     <Container>
       <section id="experts" className="pt-20 bg-white">
@@ -14,28 +12,24 @@ const ExpertTeam = () => {
             title="Our Expert Team"
             className="mb-0"
           />
-          <EmblaCarousel slides={SLIDES} options={OPTIONS} />
 
-          {/* <div className="text-center">
-            <a href="#contact">
-              <AppButton className="inline-flex items-center bg-cerulean-blue-800">
-                Work With Our Experts
-                <svg
-                  className="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </AppButton>
-            </a>
-          </div> */}
+          <InfiniteHorizontalScroll intervalTime={5} scrollSpeed={2}>
+            <img src="https://placehold.co/600x400" alt="Brand 1" />
+            <img src="https://placehold.co/600x400" alt="Brand 2" />
+            <img src="https://placehold.co/600x400" alt="Brand 3" />
+            <img src="https://placehold.co/600x400" alt="Brand 4" />
+            <img src="https://placehold.co/600x400" alt="Brand 5" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+            <img src="https://placehold.co/600x400" alt="Brand 6" />
+          </InfiniteHorizontalScroll>
         </div>
       </section>
     </Container>
