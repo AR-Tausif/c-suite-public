@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
-import EmblaCarousel from "../components/EmblaCarousel";
 import SectionHeading from "../components/SectionHeading";
 import InfiniteHorizontalScroll from "@/components/infiniteScroll";
+import ExpertCard from "@/components/ExpertCard";
 
 const ExpertTeam = () => {
   return (
@@ -13,22 +13,20 @@ const ExpertTeam = () => {
             className="mb-0"
           />
 
-          <InfiniteHorizontalScroll intervalTime={5} scrollSpeed={2}>
-            <img src="https://placehold.co/600x400" alt="Brand 1" />
-            <img src="https://placehold.co/600x400" alt="Brand 2" />
-            <img src="https://placehold.co/600x400" alt="Brand 3" />
-            <img src="https://placehold.co/600x400" alt="Brand 4" />
-            <img src="https://placehold.co/600x400" alt="Brand 5" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
-            <img src="https://placehold.co/600x400" alt="Brand 6" />
+          <InfiniteHorizontalScroll intervalTime={5} scrollSpeed={0.9}>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
+            <ExpertCard/>
           </InfiniteHorizontalScroll>
         </div>
       </section>

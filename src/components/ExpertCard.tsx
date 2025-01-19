@@ -1,6 +1,6 @@
 const ExpertCard = () => {
   return (
-    <div className="bg-white rounded-xl shadow-sm overflow-hidden group transition-all duration-300 hover:shadow-sm">
+    <div className="bg-white rounded-xl max-w-sm shadow-sm overflow-hidden group transition-all duration-300 hover:shadow-sm">
       <div className="p-6">
         <div className="relative">
           <img
