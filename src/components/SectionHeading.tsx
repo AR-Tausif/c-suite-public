@@ -23,7 +23,7 @@ const SectionHeading: FC<IProps> = ({
       </h2>
       {/* <div className="w-24 h-1 bg-red-600 mx-auto"></div> */}
       <p className="mt-1 mb-2 text-xl text-gray-600">{desc}</p>
-      <div className={`max-w-md h-1 mt-3 bg-cerulean-blue-800 mx-auto`} style={{width: `${title.length*1.2}rem`}}></div>
+      <div className={`max-w-md h-1 mt-3 bg-cerulean-blue-800 mx-auto`} style={{width: `${ title.length >17 ?title.length*1 : title.length*1.2}rem`}}></div>
     </div>
   );
 };

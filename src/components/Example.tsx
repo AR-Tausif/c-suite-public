@@ -24,7 +24,7 @@ export const Example: FC<IProps> = ({ tabContents }) => {
           <TabsTrigger
           key={tab.id}
             value={tab.title.toLowerCase()}
-            className="bg-neutral-700 text-gray-300 py-3 font-semibold transition-all"
+            className="bg-neutral-700 text-gray-300 py-3 md:py-[1rem] font-semibold transition-all"
           >
             {tab.title}
           </TabsTrigger>

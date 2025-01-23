@@ -2,19 +2,19 @@ import Container from "@/components/Container";
 
 const WhatIsCSuite = () => {
   return (
-    <div className="border-b-[3px] border-red-700"> 
+    <div className="border-b-[3px] border-[#aaaaaa]"> 
     <Container>
       <div className="flex flex-col sm:flex-row justify-between items-center gap-5 sm:gap-0 py-6">
         <div className="relative inline-block text-center">
           {/* <!-- Red borders --> */}
-          <div className="absolute top-0 left-0 h-1 sm:h-2 w-28 bg-red-600"></div>
-          <div className="absolute top-0 left-0 h-14 sm:h-16 w-1 sm:w-2 bg-red-600"></div>
+          <div className="absolute top-0 left-0 h-1 sm:h-1 w-28 bg-red-600"></div>
+          <div className="absolute top-0 left-0 h-14 sm:h-16 w-1 sm:w-1.5 bg-red-600"></div>
 
-          <div className="absolute bottom-0 right-0 h-1 sm:h-2 w-28 bg-red-600"></div>
-          <div className="absolute bottom-0 right-0 h-14 sm:h-16 w-1 sm:w-2 bg-red-600"></div>
+          <div className="absolute bottom-0 right-0 h-1 sm:h-1 w-28 bg-red-600"></div>
+          <div className="absolute bottom-0 right-0 h-14 sm:h-16 w-1 sm:w-1.5 bg-red-600"></div>
 
           {/* <!-- Text --> */}
-          <h2 className="text-2xl sm:text-4xl font-bold p-4 sm:p-5 px-8">
+          <h2 className="text-xl sm:text-3xl font-semibold p-4 sm:p-5 px-8">
             WHAT IS C- SUITE?
           </h2>
         </div>
