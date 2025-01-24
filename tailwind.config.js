@@ -1,5 +1,8 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+import colors from "tailwindcss/colors";
 import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 /** @type {import('tailwindcss').Config} */
+
 export const darkMode = ["class"];
 export const content = [
   "./pages/**/*.{ts,tsx}",
@@ -106,12 +109,21 @@ export const theme = {
           height: "0",
         },
       },
+      // added for infinity aceternity
+      scroll: {
+        to: {
+          transform: "translate(calc(-50% - 0.5rem))",
+        },
+      },
     },
     animation: {
       "accordion-down": "accordion-down 0.2s ease-out",
       "accordion-up": "accordion-up 0.2s ease-out",
       "accordion-down": "accordion-down 0.2s ease-out",
       "accordion-up": "accordion-up 0.2s ease-out",
+      // added for infinity aceternity
+      scroll:
+      "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
     },
   },
 };

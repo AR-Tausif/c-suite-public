@@ -6,12 +6,15 @@ import HeaderHero from "./sections/HeaderHero";
 import Overview from "./sections/OverviewSection";
 import CoreConcept from "./sections/CoreConcept";
 import LeaderSection from "./sections/LeaderSection";
-import ExpertTeam from "./sections/ExpertTeam";
 import Contact from "./sections/Contact";
 import WhatIsCSuite from "./sections/WhatIsCSuite";
 import Solution from "./sections/SolutionSection";
-import ExpertTeamSection from "./sections/ExpertTeamSection";
+import { InfiniteMovingCardsDemo } from "./sections/InfiniteMovingCardsDemo";
 // import Solution from "./sections/Solution";
+
+
+
+
 
 const App = () => {
   return (
@@ -24,7 +27,8 @@ const App = () => {
       {/* <Solution /> */}
       <Solution/>
       <LeaderSection />
-      <ExpertTeam />
+      {/* <ExpertTeam /> */}
+      <InfiniteMovingCardsDemo/>
       {/* <ExpertTeamSection/> */}
       <Contact />
       <Footer />
