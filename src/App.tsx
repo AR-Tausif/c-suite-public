@@ -10,6 +10,7 @@ import Contact from "./sections/Contact";
 import WhatIsCSuite from "./sections/WhatIsCSuite";
 import Solution from "./sections/SolutionSection";
 import { InfiniteMovingCardsDemo } from "./sections/InfiniteMovingCardsDemo";
+import Blog from "./sections/Blog";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <CoreConcept />
       <Solution />
       <LeaderSection />
+      <Blog/>
       <InfiniteMovingCardsDemo />
       <Contact />
       <Footer />

@@ -35,7 +35,7 @@ const ExpertCard = () => {
         <div className="flex justify-center space-x-4">
           <AlertDialog>
             <AlertDialogTrigger className="">
-              <button className="px-4 py-2 text-sm text-purple-600 border border-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition-colors">
+              <button className="px-4 py-1 mt-1 text-sm text-cerulean-blue-800 border border-cerulean-blue-800 rounded-full hover:bg-cerulean-blue-800 hover:text-white transition-colors">
                 Learn More
               </button>
             </AlertDialogTrigger>

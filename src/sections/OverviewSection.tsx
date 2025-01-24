@@ -5,19 +5,19 @@ import SectionHeading from "@/components/SectionHeading";
 const Overview = () => {
   const overviewData = [
     {
-      title: "Fast Execution",
+      title: "Mission",
       description:
         "We deliver rapid solutions with precision and efficiency, ensuring quick time-to-market for your business needs.",
       icon: <PowerIcon/>,
     },
     {
-      title: "Quality Assurance",
+      title: "Vission",
       description:
         "Our rigorous quality control processes ensure delivery of premium solutions that exceed expectations.",
       icon: <CheckRoundIcon/>,
     },
     {
-      title: "Customization",
+      title: "Values",
       description:
         "Tailored solutions designed specifically for your unique business challenges and goals.",
       icon: <DotConnectIcon/>,
