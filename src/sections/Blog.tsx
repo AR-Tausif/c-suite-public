@@ -16,8 +16,7 @@ const Blog = () => {
         name: "Michael Foster",
         role: "Co-Founder / CTO",
         href: "#",
-        imageUrl:
-          "https://i.ibb.co/Y23YC07/image-02.jpg",
+        imageUrl: "https://i.ibb.co/Y23YC07/image-02.jpg",
       },
     },
     {
@@ -33,8 +32,7 @@ const Blog = () => {
         name: "Michael Foster",
         role: "Co-Founder / CTO",
         href: "#",
-        imageUrl:
-          "https://i.ibb.co/Cnwd4q6/image-01.jpg",
+        imageUrl: "https://i.ibb.co/Cnwd4q6/image-01.jpg",
       },
     },
     {
@@ -50,11 +48,10 @@ const Blog = () => {
         name: "Michael Foster",
         role: "Co-Founder / CTO",
         href: "#",
-        imageUrl:
-          "https://i.ibb.co/7jdcnwn/image-03.jpg",
+        imageUrl: "https://i.ibb.co/7jdcnwn/image-03.jpg",
       },
     },
-   
+
     // More posts...
   ];
   return (
@@ -141,17 +138,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
-const BlogCard = ({
-  image,
-  date,
-  CardTitle,
-  CardDescription,
-}: {
-  href: string;
-  date: string;
-  CardTitle: string;
-  CardDescription: string;
-}) => {
-  return <></>;
-};
