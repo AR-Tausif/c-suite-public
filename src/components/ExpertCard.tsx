@@ -1,5 +1,16 @@
 import ExpertAlertBox from "./ExpertAlertBox";
-import { AlertDialog, AlertDialogTrigger } from "./ui/alert-dialog";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "./ui/alert-dialog";
+import { Button } from "./ui/button";
 
 const ExpertCard = () => {
   return (
@@ -22,35 +33,30 @@ const ExpertCard = () => {
           10+ years in cybersecurity
         </p>
         <div className="flex justify-center space-x-4">
-        <AlertDialog>
-          <AlertDialogTrigger className="">
-            <div className="flex items-center justify-center">
-              <p className="text-cerulean-blue-800 text-center font-bold inline">
+          <AlertDialog>
+            <AlertDialogTrigger className="">
+              <button className="px-4 py-2 text-sm text-purple-600 border border-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition-colors">
                 Learn More
-              </p>
-              <svg
-                className="w-5 h-5 ml-2 mt-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </div>
-          </AlertDialogTrigger>
-            <ExpertAlertBox />
-        </AlertDialog>
+              </button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Expert Name of ...</AlertDialogTitle>
+                <AlertDialogDescription>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae facilis aperiam quae rem repudiandae incidunt
+                  asperiores consectetur voluptates doloribus accusantium rerum
+                  facere, ab dignissimos cumque repellat. Quasi dolore commodi
+                  accusantium?
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction>Continue</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
-        {/* <div className="flex justify-center space-x-4">
-          <button className="px-4 py-2 text-sm text-purple-600 border border-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition-colors">
-            View Profile
-          </button>
-        </div> */}
       </div>
     </div>
   );

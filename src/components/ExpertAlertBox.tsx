@@ -12,10 +12,9 @@ const ExpertAlertBox = () => {
   return (
     <AlertDialogContent>
       <AlertDialogHeader>
-        <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+        <AlertDialogTitle>Expert Name of ...</AlertDialogTitle>
         <AlertDialogDescription>
-          This action cannot be undone. This will permanently delete your
-          account and remove your data from our servers.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facilis aperiam quae rem repudiandae incidunt asperiores consectetur voluptates doloribus accusantium rerum facere, ab dignissimos cumque repellat. Quasi dolore commodi accusantium?
         </AlertDialogDescription>
       </AlertDialogHeader>
       <AlertDialogFooter>
